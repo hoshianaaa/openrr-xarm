@@ -1,0 +1,13 @@
+openrr_apps_robot_command list
+
+openrr_apps_robot_command send_joints arm -j 0=0.0 1=-0.5  2=0.0 3=0.0   4=0.0 5=0.0
+openrr_apps_robot_command send_joints arm -j 0=0.0 1=0.0  2=0.0 3=0.0   4=0.0 5=0.0
+
+openrr_apps_robot_command move_ik arm_ik --x=0.5 --y=0.0 --z=0.1
+openrr_apps_robot_command move_ik arm_ik --x=0.2 --y=0.0 --z=0.1
+
+openrr_apps_robot_command move_ik arm_ik --x=0.5 --y=0.0 --z=0.1
+openrr_apps_robot_command move_ik arm_ik --x=0.2 --y=0.0 --z=0.1
+
+openrr_apps_robot_command execute_command -- date
+openrr_apps_robot_command execute_command -- ls -a
